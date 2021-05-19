@@ -1,4 +1,4 @@
-#Software Quality Management Plan
+# Software Quality Management Plan
 
 The purpose of this project is to demonstrate the best practices for a software development project. This document should only be used by the team as a reference guide for implementing the best practices during a project. The document will demonstrate the following topics:
 
@@ -13,9 +13,9 @@ The purpose of this project is to demonstrate the best practices for a software 
 - Code-review checklist
 
 
-##Scrum sprint backlog and task estimation
+## Scrum sprint backlog and task estimation
 
-####Sprint backlog
+#### Sprint backlog
 
 | Task                             				| Estimation    | Priority   |Status   |
 | ----------------------------------------------|:-------------:|:----------:|:-------:|
@@ -58,7 +58,7 @@ task 'Create method to make new rubric' was assigned a story point of 2 as I est
   This diagram illustrates the thought process behind assigning estimations to tasks 
 </p>
 
-####Calculating velocity
+#### Calculating velocity
 Velocity is a metric used to measure the amount of work a Team can complete during a Sprint. By analyzing the amount of tasks completed in previous sprints, A development team can estimate how much work they can do in future sprint.
  
 In order to estimate the Velocity the team should review the previous three sprints. The team should count how many user story points have been completed in each sprint, while disregarding any that may not be completed or partially completed. So for example in my sprint, if the team completed all tasks, a total of 37 story points would have been completed. This process would be completed for three sprints then add the total number of stories and divide it by three to get the average number of story points completed. The team can now plan future sprints around this velocity metric they have calculated. The amount of work in future sprints should be decided based on this. So the number of story points in a future sprint should be add up to a number around the velocity calculated. this will dictate how many user stories will be in the sprint. It is important to remember that this is only an estimate and can change depending on variables such as team size and project complexity. 
