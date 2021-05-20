@@ -47,6 +47,18 @@ public class Controller {
 			
 			return person;
 		}
+		
+	// Get a specific Rubric by name
+		public Rubric getSpecificRubric(String name) {
+			Rubric r=null;
+			for (Rubric rubric : rubrics) {
+				if (rubric.getName().equals(name)) {
+					r= rubric;
+				}
+			}
+			return r;
+		}
+	
 
 
 	public static void main(String[] args) {

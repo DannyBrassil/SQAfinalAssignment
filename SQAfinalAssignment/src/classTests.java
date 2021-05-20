@@ -38,6 +38,7 @@ class classTests {
 			
 			List<String> criteria= new ArrayList<>();
 
+			//more than 10 criteria
 			for(int i=0;i<11;i++) {
 				criteria.add(new String("example "+i));
 			}
@@ -64,6 +65,40 @@ class classTests {
 
 		}
 		
-	
+		//test to create a person and give them grades but with wrong grade (under 1 or over 5)
+				@Test 
+				void newPersonWrongGrade() {
+					Controller c = new Controller();
+					
+					HashMap<String, Integer> personsGrades = new HashMap<String, Integer>();
+					personsGrades.put("Design", 7);//wrong grade 
+					personsGrades.put("Implementation", 2);
+					personsGrades.put("Testing", 2);
+					personsGrades.put("Documentation", 4);
+
+					Person person = c.newPerson("Alan Brown", personsGrades);
+					assertEquals(null, person);
+
+				}
+		
+		//Get a specific rubric by name
+				@Test
+				public void GetRubricByName() {
+
+					Controller c = new Controller();
+					
+					List<String> criteria= new ArrayList<>();
+
+					//sample criteria
+					for(int i=0;i<8;i++) {
+						criteria.add(new String("example "+i));
+					}
+					
+					Rubric r1 = c.newRubric("Test grades", null, criteria);
+					Rubric rubric = c.getSpecificRubric("Test grades");
+
+					assertEquals(r1, rubric);
+
+				}
 
 }
