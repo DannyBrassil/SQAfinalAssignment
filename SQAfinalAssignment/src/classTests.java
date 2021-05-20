@@ -100,5 +100,27 @@ class classTests {
 					assertEquals(r1, rubric);
 
 				}
+				
+			//Add criteria to a rubric
+				@Test
+				public void addCriteriaToRubric() {
+
+					Controller c = new Controller();
+
+					ArrayList<String> criteria = new ArrayList<>();
+
+					criteria.add(new String("Design"));
+					criteria.add(new String("Implementation"));
+					criteria.add(new String("Testing"));
+					criteria.add(new String("Documentation"));
+
+					Rubric rubric = c.newRubric("Example", null, criteria);
+
+					rubric = c.addCriteria("Review", rubric);
+
+					assertEquals("Review", rubric.getCriteria().get(4));
+
+
+				}
 
 }
