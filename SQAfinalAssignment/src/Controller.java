@@ -14,6 +14,18 @@ public class Controller {
 		
 		
 	}
+	
+	//Create New Rubric
+		public Rubric newRubric(String name, List<Person>studentsGrades, List<String> criteria) {
+			Rubric rubric = null;
+				if (criteria.size() > 10) {
+					
+				}else {
+					rubric = new Rubric(name, studentsGrades, criteria);
+					rubrics.add(rubric);
+				}
+				return rubric;
+		}
 
 
 	public static void main(String[] args) {
