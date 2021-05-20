@@ -25,7 +25,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 | Create method to get a specific rubric by name| 2 			| 5          |Completed|
 | Create method to create new student grade     | 2             | 6          |Completed|
 | Create method to add a Criterion to a Rubric  | 2             | 7          |Completed|
-| Create method to get a list of all Rubrics    | 2             | 8          |			|
+| Create method to get a list of all Rubrics    | 2             | 8          |Completed|
 | Create method to add a score for a particular criterion to a grade| 2             | 9          |         |
 | Create method to get all StudentGrades associated with a specific rubric| 2             | 10          |         |
 | Create method to find average score of all student grades in a rubric| 3             | 11          |         |
