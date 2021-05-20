@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 //class to control operations for application
@@ -25,6 +26,26 @@ public class Controller {
 					rubrics.add(rubric);
 				}
 				return rubric;
+		}
+		
+	//create a new person 
+		public Person newPerson(String name, HashMap<String, Integer> grades) {
+			Person person=null;
+			boolean wrongGrade=false;;
+					
+			for (Integer i : grades.values()) {
+				if (i > 5 || i < 1) {
+					wrongGrade=true;
+						}
+					}
+			
+			if(wrongGrade==true) {
+				
+			}else {
+				person= new Person(name, grades);
+			}
+			
+			return person;
 		}
 
 

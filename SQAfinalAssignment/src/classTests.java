@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -44,6 +45,25 @@ class classTests {
 			Rubric rubric = c.newRubric("SQA", null, criteria);
 			assertEquals(null, rubric);
 		}
+		
+	//test to create a person and give them grades
+		@Test 
+		void newPerson() {
+			Controller c = new Controller();
+			
+			HashMap<String, Integer> personsGrades = new HashMap<String, Integer>();
+			personsGrades.put("Design", 3);
+			personsGrades.put("Implementation", 2);
+			personsGrades.put("Testing", 2);
+			personsGrades.put("Documentation", 4);
+
+			Person person = c.newPerson("Alan Brown", personsGrades);
+
+			assertEquals("Alan Brown", person.getName());
+			assertEquals(personsGrades, person.getGrades());
+
+		}
+		
 	
 
 }
