@@ -2,30 +2,38 @@ import java.util.ArrayList;
 //class that represents the rubric
 public class Rubric {
 
-	private ArrayList<Criterion> criteria = new ArrayList<>();
-	String Student;
+	private String criteria;
+	private int grade;
+	
 	
 	//constructors
-	public Rubric() {}
-	public Rubric(ArrayList<Criterion> criteria, String student) {
+	public Rubric() {
+		
+	}
+	public Rubric(String criteria, int grade) {
 		super();
 		this.criteria = criteria;
-		Student = student;
+		this.grade = grade;
 	}
 	
-	//getters and setters
-	public ArrayList<Criterion> getCriteria() {
+	//getters/setters
+	public String getCriteria() {
 		return criteria;
 	}
-	public void setCriteria(ArrayList<Criterion> criteria) {
+	public void setCriteria(String criteria) {
 		this.criteria = criteria;
 	}
-	public String getStudent() {
-		return Student;
+	public int getGrade() {
+		return grade;
 	}
-	public void setStudent(String student) {
-		Student = student;
+	public void setGrade(int grade) {
+		this.grade = grade;
 	}
+	
+	
+	
+	
+	
 	
 	
 }
