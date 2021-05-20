@@ -185,6 +185,28 @@ class classTests {
 				public void getAverageGradesInRubric() {
 
 					Controller c = new Controller();
+					createRubric(c);
+					double average = c.AverageGradesInRubric(c.getSpecificRubric("Ruberic1"));
+					
+					assertEquals(16, average);
+
+				}
+				
+				//get std dev of student grades in a rubric
+				@Test
+				public void getStdDevofGradesInRubric() {
+					Controller c = new Controller();
+					createRubric(c);
+
+					double stdev = c.stdevOfGradesInRubric(c.getSpecificRubric("Ruberic1"));
+					
+					assertEquals(24, stdev);
+
+				}
+
+				private void createRubric(Controller c) {
+					// TODO Auto-generated method stub
+					
 					ArrayList<String> criteria = new ArrayList<>();
 
 					criteria.add(new String("Design"));
@@ -212,12 +234,7 @@ class classTests {
 					grades.add(person2);
 
 					c.newRubric("Ruberic1", grades, criteria);
-
 					
-					double average = c.AverageGradesInRubric(c.getSpecificRubric("Ruberic1"));
-					
-					assertEquals(16, average);
-
 				}
 
 }
