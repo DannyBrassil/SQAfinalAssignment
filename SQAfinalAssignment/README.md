@@ -62,7 +62,7 @@ task 'Create method to make new rubric' was assigned a story point of 2 as I est
 Velocity is a metric used to measure the amount of work a Team can complete during a Sprint. By analyzing the amount of tasks completed in previous sprints, A development team can estimate how much work they can do in future sprint.
  
 In order to estimate the Velocity the team should review the previous three sprints. The team should count how many user story points have been completed in each sprint, while disregarding any that may not be completed or partially completed. So for example in my sprint, if the team completed all tasks, a total of 37 story points would have been completed. This process would be completed for three sprints then add the total number of stories and divide it by three to get the average number of story points completed. The team can now plan future sprints around this velocity metric they have calculated. The amount of work in future sprints should be decided based on this. So the number of story points in a future sprint should be add up to a number around the velocity calculated. this will dictate how many user stories will be in the sprint. It is important to remember that this is only an estimate and can change depending on variables such as team size and project complexity. 
-A useful way to keep track of velocity is by using a chart or graph to illustrate it. Kanban boards or velocity burndown graphs are a good otpion to illustrate the illustate the planned velocity and compare it to the actual velocity. This gives teams a visual representation to help stay on track with the planned velocity of the sprint they are working on
+A useful way to keep track of velocity is by using a chart or graph to illustrate it. Kanban boards or velocity burndown graphs are a good option to illustrate the illustrate the planned velocity and compare it to the actual velocity. This gives teams a visual representation to help stay on track with the planned velocity of the sprint they are working on
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/SampleBurndownChart.png"
@@ -71,8 +71,10 @@ A useful way to keep track of velocity is by using a chart or graph to illustrat
   This diagram illustrates an example of a burndown chart 
 </p>
 
+## Test Coverage metric 
 
-
+Test coverage is a metric used in software testing that measures the amount of testing performed by a set of tests. It works by gathering information about which parts of the application are executed when running tests. The tool i used for my tests is called 
+'EclEmma'. EclEmma is a java code coverage tool for eclipse. I chose this tool as it works good within the eclipse IDE and offers features within the IDE that allow for easy access o the analysis. It also provides plenty of analyis on the coverage and summarizes the coverage nicely and is highlighted throughout the code. 
 
 
 
