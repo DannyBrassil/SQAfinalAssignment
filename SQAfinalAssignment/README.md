@@ -37,6 +37,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 
 
 
+
 To estimate the task in the sprint backlog I used story points. This is a popular technique used in agile development
 that allows the developers to create an estimation of the difficulty involved in implementing a specific user story.
 An estimation is chosen based on different factors that can alter the difficulty such as the complexity of the task,
