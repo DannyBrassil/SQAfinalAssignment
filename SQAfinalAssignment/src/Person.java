@@ -1,19 +1,21 @@
+import java.util.HashMap;
 
 public class Person {
 	
-	private String name;
-	private Topic topic;
 	
-	//constructors
+	String name;
+	HashMap<String,Integer>grades = new HashMap();
+	
+	
+	//Constructors
 	public Person() {}
-	
-	public Person(String name, Topic topic) {
+
+	public Person(String name, HashMap<String, Integer> grades) {
 		super();
 		this.name = name;
-		this.topic = topic;
+		this.grades = grades;
 	}
-	//getters & setters
-
+	//Getters & Setters
 	public String getName() {
 		return name;
 	}
@@ -22,16 +24,15 @@ public class Person {
 		this.name = name;
 	}
 
-	public Topic getTopic() {
-		return topic;
+	public HashMap<String, Integer> getGrades() {
+		return grades;
 	}
 
-	public void setTopic(Topic topic) {
-		this.topic = topic;
+	public void setGrades(HashMap<String, Integer> grades) {
+		this.grades = grades;
 	}
-	
-	
-	
-	
+
+
+
 
 }

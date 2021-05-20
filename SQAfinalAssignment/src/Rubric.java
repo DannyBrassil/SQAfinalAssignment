@@ -1,39 +1,52 @@
-import java.util.ArrayList;
-//class that represents the rubric
-public class Rubric {
 
-	private String criteria;
-	private int grade;
+import java.util.ArrayList;
+import java.util.List;
+
+//class to represent a rubric with a name , students and their grades and criteria in the rubric
+public class Rubric {
+	
+	String name;
+	List<Person>grades = new ArrayList<>();
+	List<String> criteria = new ArrayList<String>();
 	
 	
-	//constructors
-	public Rubric() {
-		
-	}
-	public Rubric(String criteria, int grade) {
+	//Constructors
+	public Rubric() {}
+
+	public Rubric(String name, List<Person> grades, List<String> criteria) {
 		super();
+		this.name = name;
+		this.grades = grades;
 		this.criteria = criteria;
-		this.grade = grade;
 	}
+
+	//Getters & Setters
 	
-	//getters/setters
-	public String getCriteria() {
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Person> getGrades() {
+		return grades;
+	}
+
+	public void setGrades(List<Person> grades) {
+		this.grades = grades;
+	}
+
+	public List<String> getCriteria() {
 		return criteria;
 	}
-	public void setCriteria(String criteria) {
+
+	public void setCriteria(List<String> criteria) {
 		this.criteria = criteria;
 	}
-	public int getGrade() {
-		return grade;
-	}
-	public void setGrade(int grade) {
-		this.grade = grade;
-	}
+
 	
 	
-	
-	
-	
-	
-	
+
 }
