@@ -16,6 +16,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 ## Scrum sprint backlog and task estimation
 
 #### Sprint backlog
+
 | Task                             				| Estimation    | Priority   |Status   |
 | ----------------------------------------------|:-------------:|:----------:|:-------:|
 | Create POJO's                    				| 1 			| 1          |Completed|
@@ -24,18 +25,14 @@ The purpose of this project is to demonstrate the best practices for a software 
 | Create method to make new rubric 				| 2             | 4          |Completed|
 | Create method to get a specific rubric by name| 2 			| 5          |Completed|
 | Create method to create new student grade     | 2             | 6          |Completed|
-| Create method to add a Criterion to a Rubric  | 2             | 7          |Completed|
-| Create method to get a list of all Rubrics    | 2             | 8          |			|
-| Create method to add a score for a particular criterion to a grade| 2             | 9          |         |
-| Create method to get all StudentGrades associated with a specific rubric| 2             | 10          |         |
-| Create method to find average score of all student grades in a rubric| 3             | 11          |         |
-| Create method to find standard deviation of all student grades in a rubric| 3             | 12          |         |
-| Create method to find the minimum and maximum scores in a rubric| 3             | 13         |         |
-| Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 14         |      |
-| Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 15      |   |
-| Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 16         |         |
-
-
+| Create method to add a score for a particular criterion to a grade| 2             | 7          |         |
+| Create method to get all StudentGrades associated with a specific rubric| 2             | 8          |         |
+| Create method to find average score of all student grades in a rubric| 3             | 9          |         |
+| Create method to find standard deviation of all student grades in a rubric| 3             | 10          |         |
+| Create method to find the minimum and maximum scores in a rubric| 3             | 11         |         |
+| Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 12         |       |
+| Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 13      |   |
+| Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 14         |         |
 
 
 To estimate the task in the sprint backlog I used story points. This is a popular technique used in agile development
