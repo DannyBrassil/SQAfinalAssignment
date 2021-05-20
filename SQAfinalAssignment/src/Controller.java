@@ -110,6 +110,21 @@ public class Controller {
 				return average;
 			}
 			
+			//find standard deviation of all student grades in a rubric
+			public double stdevOfGradesInRubric(Rubric rubric) {
+				double total=0;
+				
+				double mean = AverageGradesInRubric(rubric);
+				for(Person grade :rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+						total += Math.pow(f - mean, 2);
+					}
+				}
+				
+				return Math.sqrt(total/rubric.getGrades().size());
+				
+				
+			}
 		
 
 	public static void main(String[] args) {
