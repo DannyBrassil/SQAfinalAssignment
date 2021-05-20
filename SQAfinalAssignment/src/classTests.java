@@ -179,5 +179,45 @@ class classTests {
 					assertEquals(grades, allGrades);
 
 				}
+				
+				//get average of student grades in a rubric
+				@Test
+				public void getAverageGradesInRubric() {
+
+					Controller c = new Controller();
+					ArrayList<String> criteria = new ArrayList<>();
+
+					criteria.add(new String("Design"));
+					criteria.add(new String("Implementation"));
+					criteria.add(new String("Testing"));
+					criteria.add(new String("Documentation"));
+
+					HashMap<String, Integer> gradesPerson1 = new HashMap();	
+					gradesPerson1.put(criteria.get(0), 5);
+					gradesPerson1.put(criteria.get(1), 5);
+					gradesPerson1.put(criteria.get(2), 5);
+					gradesPerson1.put(criteria.get(3), 5);
+					Person person1 = c.newPerson("Alan Brown", gradesPerson1);
+					
+					
+					HashMap<String, Integer> gradesPerson2 = new HashMap();
+					gradesPerson2.put(criteria.get(0), 3);
+					gradesPerson2.put(criteria.get(1), 3);
+					gradesPerson2.put(criteria.get(2), 3);
+					gradesPerson2.put(criteria.get(3), 3);
+					Person person2 = c.newPerson("Catherine Dunne", gradesPerson2);
+
+					List<Person> grades = new ArrayList<Person>();
+					grades.add(person1);
+					grades.add(person2);
+
+					c.newRubric("Ruberic1", grades, criteria);
+
+					
+					double average = c.AverageGradesInRubric(c.getSpecificRubric("Ruberic1"));
+					
+					assertEquals(16, average);
+
+				}
 
 }

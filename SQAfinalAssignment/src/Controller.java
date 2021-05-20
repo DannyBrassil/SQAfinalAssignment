@@ -96,6 +96,20 @@ public class Controller {
 				}
 				return allGrades;
 			}
+			
+			//get average score of all student grades in a rubric
+			public double AverageGradesInRubric(Rubric rubric) {
+				
+				int totalGrade =0;
+				for(Person grade :rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+						totalGrade += f;
+					}
+				}
+				double average = Math.round(totalGrade/rubric.getGrades().size());
+				return average;
+			}
+			
 		
 
 	public static void main(String[] args) {
