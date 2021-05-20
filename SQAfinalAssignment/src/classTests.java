@@ -120,5 +120,23 @@ class classTests {
 
 					assertEquals("Review", rubric.getCriteria().get(4));
 				}
+				
+			//get a list of all rubrics
+				@Test
+				public void listAllRubrics() {
+
+					Controller c = new Controller();
+					ArrayList<String> criteria = new ArrayList<>();
+
+					criteria.add(new String("Design"));
+					criteria.add(new String("Implementation"));
+					criteria.add(new String("Testing"));
+					criteria.add(new String("Documentation"));
+
+					Rubric rubric1 = c.newRubric("rubric1", null, criteria);
+					Rubric rubric2 = c.newRubric("rubric2", null, criteria);
+
+					assertEquals("[rubric1, rubric2]", c.AllRubrics().toString());
+				}
 
 }

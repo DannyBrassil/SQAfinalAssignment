@@ -73,6 +73,15 @@ public class Controller {
 			return r;
 		}
 
+		//get list of all rubrics
+		 public ArrayList<String> AllRubrics() {
+			 ArrayList<String> names = new ArrayList<String>();
+			 for (Rubric rubric : rubrics) {
+		            names.add(rubric.getName());
+		        }
+			return names; 
+		    }
+		
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
