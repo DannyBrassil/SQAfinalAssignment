@@ -21,16 +21,16 @@ The purpose of this project is to demonstrate the best practices for a software 
 | ----------------------------------------------|:-------------:|:----------:|:-------:|
 | Create POJO's                    				| 1 			| 1          |Completed|
 | Create Controller class          				| 1             | 2          |Completed|
-| Investigate and configure test coverage tools | 2             | 3          |         |
-| Create method to make new rubric 				| 2             | 4          |         |
-| Create method to get a specific rubric by name| 2 			| 5          |         |
-| Create method to create new student grade     | 2             | 6          |         |
+| Investigate and configure test coverage tools | 2             | 3          |Completed|
+| Create method to make new rubric 				| 2             | 4          |Completed|
+| Create method to get a specific rubric by name| 2 			| 5          |Completed|
+| Create method to create new student grade     | 2             | 6          |Completed|
 | Create method to add a score for a particular criterion to a grade| 2             | 7          |         |
 | Create method to get all StudentGrades associated with a specific rubric| 2             | 8          |         |
 | Create method to find average score of all student grades in a rubric| 3             | 9          |         |
 | Create method to find standard deviation of all student grades in a rubric| 3             | 10          |         |
 | Create method to find the minimum and maximum scores in a rubric| 3             | 11         |         |
-| Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 12         |       |
+| Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 12         |      |
 | Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 13      |   |
 | Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 14         |         |
 
