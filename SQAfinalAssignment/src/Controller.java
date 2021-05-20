@@ -58,7 +58,20 @@ public class Controller {
 			}
 			return r;
 		}
+		
 	
+		//add a criteria to a rubric
+		public Rubric addCriteria(String criteria, Rubric r) {
+
+			List list = new ArrayList<String>();
+			list.addAll(r.getCriteria());
+
+			if (list.size() < 10) {
+				list.add(criteria);
+			}
+			r.setCriteria(list);
+			return r;
+		}
 
 
 	public static void main(String[] args) {
