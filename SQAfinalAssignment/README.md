@@ -20,7 +20,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 | Task                             				| Estimation    | Priority   |Status   |
 | ----------------------------------------------|:-------------:|:----------:|:-------:|
 | Create POJO's                    				| 1 			| 1          |Completed|
-| Create Controller class          				| 1             | 2          |         |
+| Create Controller class          				| 1             | 2          |Completed|
 | Investigate and configure test coverage tools | 1             | 3          |         |
 | Create method to make new rubric 				| 2             | 4          |         |
 | Create method to get a specific rubric by name| 2 			| 5          |         |
