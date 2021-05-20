@@ -21,7 +21,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 | ----------------------------------------------|:-------------:|:----------:|:-------:|
 | Create POJO's                    				| 1 			| 1          |Completed|
 | Create Controller class          				| 1             | 2          |Completed|
-| Investigate and configure test coverage tools | 1             | 3          |         |
+| Investigate and configure test coverage tools | 2             | 3          |         |
 | Create method to make new rubric 				| 2             | 4          |         |
 | Create method to get a specific rubric by name| 2 			| 5          |         |
 | Create method to create new student grade     | 2             | 6          |         |
