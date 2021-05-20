@@ -69,9 +69,7 @@ public class Controller {
 			if (list.size() < 10) {
 				list.add(criteria);
 			}
-
 			r.setCriteria(list);
-
 			return r;
 		}
 

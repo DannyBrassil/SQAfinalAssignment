@@ -119,8 +119,6 @@ class classTests {
 					rubric = c.addCriteria("Review", rubric);
 
 					assertEquals("Review", rubric.getCriteria().get(4));
-
-
 				}
 
 }
