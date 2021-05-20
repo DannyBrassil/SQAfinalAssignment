@@ -138,5 +138,46 @@ class classTests {
 
 					assertEquals("[rubric1, rubric2]", c.AllRubrics().toString());
 				}
+				
+				//get all student grades by specific rubric
+				@Test
+				public void getGradesBySpecificRubric() {
+
+					Controller c = new Controller();
+					ArrayList<String> criteria = new ArrayList<>();
+
+					criteria.add(new String("Design"));
+					criteria.add(new String("Implementation"));
+					criteria.add(new String("Testing"));
+					criteria.add(new String("Documentation"));
+
+					HashMap<String, Integer> gradesPerson1 = new HashMap();	
+					gradesPerson1.put(criteria.get(0), 3);
+					gradesPerson1.put(criteria.get(1), 2);
+					gradesPerson1.put(criteria.get(2), 2);
+					gradesPerson1.put(criteria.get(3), 4);
+					Person person1 = c.newPerson("Alan Brown", gradesPerson1);
+					
+					
+					HashMap<String, Integer> gradesPerson2 = new HashMap();
+					gradesPerson2.put(criteria.get(0), 2);
+					gradesPerson2.put(criteria.get(1), 2);
+					gradesPerson2.put(criteria.get(2), 1);
+					gradesPerson2.put(criteria.get(3), 3);
+					Person person2 = c.newPerson("Catherine Dunne", gradesPerson2);
+
+					List<Person> grades = new ArrayList<Person>();
+					grades.add(person1);
+					grades.add(person2);
+
+					c.newRubric("Ruberic1", grades, criteria);
+
+					List<Person> allGrades = c.allGradesBySpecificRubric("Ruberic1");
+
+					assertEquals("{Design=3, Documentation=4, Implementation=2, Testing=2}", allGrades.get(0).getGrades().toString());
+					assertEquals("{Design=2, Documentation=3, Implementation=2, Testing=1}", allGrades.get(1).getGrades().toString());
+					assertEquals(grades, allGrades);
+
+				}
 
 }
