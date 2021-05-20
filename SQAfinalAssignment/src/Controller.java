@@ -81,6 +81,21 @@ public class Controller {
 		        }
 			return names; 
 		    }
+		 
+		// Get Grades in a Specific Rubric
+			public List<Person>allGradesBySpecificRubric(String name){
+				
+				List<Person>allGrades= new ArrayList<Person>();
+				
+				for(Rubric r : rubrics) {
+					if(r.getName().equalsIgnoreCase(name)) {
+						for(Person aGrade: r.getGrades()) {
+							allGrades.add(aGrade);
+						}
+					}
+				}
+				return allGrades;
+			}
 		
 
 	public static void main(String[] args) {
