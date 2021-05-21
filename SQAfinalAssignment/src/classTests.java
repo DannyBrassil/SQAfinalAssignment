@@ -253,6 +253,31 @@ class classTests {
 				}
 				
 				
+				//get minimum of student grades in a rubrics criterion
+				@Test
+				public void getMinOfGradesInCriterion() {
+					Controller c = new Controller();
+					createRubric(c);
+
+					int min = c.minOfGradesInCriterion(c.getSpecificRubric("Ruberic1"),"Design");
+					
+					assertEquals(3, min);
+
+				}
+
+				//get maximum of student grades in a rubrics criterion
+				@Test
+				public void getMaxOfGradesInCriterion() {
+					Controller c = new Controller();
+					createRubric(c);
+
+					int max = c.maxOfGradesInCriterion(c.getSpecificRubric("Ruberic1"),"Design");
+					
+					assertEquals(5, max);
+
+				}
+				
+				
 				
 				private void createRubric(Controller c) {
 					// TODO Auto-generated method stub

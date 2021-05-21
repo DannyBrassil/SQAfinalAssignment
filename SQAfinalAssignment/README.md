@@ -32,7 +32,7 @@ The purpose of this project is to demonstrate the best practices for a software 
 | Create method to find standard deviation of all student grades in a rubric| 3             | 12          |Completed|
 | Create method to find the minimum and maximum scores in a rubric| 3             | 13         |Completed|
 | Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 14         |Completed|
-| Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 15      |   |
+| Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 15      |Completed|
 | Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 16         |         |
 
 
