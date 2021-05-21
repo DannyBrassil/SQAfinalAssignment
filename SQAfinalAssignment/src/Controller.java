@@ -155,6 +155,16 @@ public class Controller {
 				
 			}
 			
+			//get average score of all student grades in a criterion
+			public double AverageGradesInCriterion(Rubric rubric, String criterion) {
+				double avg=0;
+				for(Person grade:rubric.getGrades()) {
+					avg+=grade.getGrades().get(criterion);
+				}
+				
+				avg = avg/rubric.getGrades().size();
+				return avg;
+			}
 		
 
 	public static void main(String[] args) {
