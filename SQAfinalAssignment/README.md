@@ -85,7 +85,7 @@ I took a test driven development approach to this project. as seen in this branc
 ## Test Coverage metric 
 
 Test coverage is a metric used in software testing that measures the amount of testing performed by a set of tests. It works by gathering information about which parts of the application are executed when running tests. The tool i used for my tests is called 
-'EclEmma'. EclEmma is a java code coverage tool for eclipse. I chose this tool as it works good within the eclipse IDE and offers features within the IDE that allow for easy access o the analysis. It also provides plenty of analysis on the coverage and summarizes the coverage nicely and is highlighted throughout the code. 
+'EclEmma'. EclEmma is a java code coverage tool for eclipse. I chose this tool as it works good within the eclipse IDE and offers features within the IDE that allow for easy access to the analysis. It also provides plenty of analysis on the coverage and summarizes the coverage nicely and is highlighted throughout the code. 
 
 To run this tool in eclipse you must first install it through the Eclipse Marketplace. When you go into the marketplace search for "EclEmma"
 where it will then pop-up. Click on the install button and it will set itself up in your IDE. Once installed you run it by clicking on 'run' and then selecting 'Coverage as'. This will then run the tool on your application. This picture shows when the tool is running. It highlights the text being covered in tests in green and provides stats about the test coverage.
@@ -100,3 +100,13 @@ Here we can see that i have a line that is highlighted in red and therefore not 
 
 After introducing the new method and running the tool again you can see that this line of code is now covered in my tests as it is green. Similarly, The stats show an increase in the percentage coverage the my Controller.java class 
 
+## Team version control
+Team version control is the practice of tracking and managing changes to software code. A version control system is a software tool that aids a development team in implementing this practice. 
+
+Gitflow is a branching model for Git. Git has become one of the most popular version control tools as it has many beneficial features. Git provides a long term history of changes.This is a very helpful for problems such as identifying the root causes of bugs or reverting back to older versions of the code. Git also provides branching and merging features these features allow team to work together on the same project without conflict. Team members can create a new branch to work on a new feature of the project without disrupting the current codebase. If they decide to add this new feature to the code Git allows them to merge it into the main branch that holds their code. Git also offers a high level of Traceability. Members of the team can trace all aspects of the changes made to the software. This helps with the managemnt of the project and also improves the knowledge of the team about the the project.  
+
+I used the GitFlow process in this project. from my main branch i created a develop branch. This branch acted as a main branch in which all other feature branches were branched from and merged into. I kept track of my sprint backlog from the develop branch. For the tasks inside the sprint i created a new branch. for the setting up of the project i created a branch called "POJOs". I then created a branch called  "controller" for all of the the functionality for the application. This was beneficial as i could keep track of all my progress in terms of the sprint backlog all in one place. It also provides a history of my progress which was useful for when i needed to check back on certain commits. There was also other parts to this project such as investigating test coverage metrics and test driven development for example. For these other parts, because i was doing them at different stages throughout the project it was good idea to make these into separate feature branches. I could therefore work on these branches independently from the other code in the project.
+
+![picture](gitflow.png)
+
+This diagram illustrates the gitflow process that i followed. I had a master branch,which i then created a develop branch from. From that develop branch i created feature branches that had the content and functionality of the project. After finishing work on these i could then merge thm back into the develop branch. Once the development was completed of the project i could then merge the develop back to the master branch as the project was finished.
