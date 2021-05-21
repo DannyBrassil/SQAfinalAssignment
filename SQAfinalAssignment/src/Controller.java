@@ -165,6 +165,19 @@ public class Controller {
 				avg = avg/rubric.getGrades().size();
 				return avg;
 			}
+			
+			//find standard deviation of all student grades in a criterion in a rubric
+			public double stdevOfGradesInCriterion(Rubric rubric, String criterion) {
+				double total=0;
+				
+				double mean = AverageGradesInCriterion(rubric,criterion);
+				for(Person grade :rubric.getGrades()) {
+						total += Math.pow(grade.getGrades().get(criterion) - mean, 2);
+				}
+				
+				return Math.sqrt(total/rubric.getGrades().size());
+				
+			}
 		
 
 	public static void main(String[] args) {

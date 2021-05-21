@@ -240,6 +240,20 @@ class classTests {
 
 				}
 				
+				//get std dev of student grades in a rubrics criterion
+				@Test
+				public void getStdDevofGradesInCriteria() {
+					Controller c = new Controller();
+					createRubric(c);
+
+					double stdev = c.stdevOfGradesInCriterion(c.getSpecificRubric("Ruberic1"),"Design");
+					
+					assertEquals(1, stdev);
+
+				}
+				
+				
+				
 				private void createRubric(Controller c) {
 					// TODO Auto-generated method stub
 					
