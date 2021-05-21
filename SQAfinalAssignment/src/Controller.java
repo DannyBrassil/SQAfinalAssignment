@@ -178,6 +178,36 @@ public class Controller {
 				return Math.sqrt(total/rubric.getGrades().size());
 				
 			}
+			
+			//find max score of all student grades in a criterion in a rubric
+			public int maxOfGradesInCriterion(Rubric rubric, String criterion) {
+				int max=0;
+				for(Person grade:rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+							if(grade.getGrades().get(criterion)>max) {
+								max=f;
+							}
+					}
+				}
+				
+				return max;
+				
+			}
+			
+			//find min score of all student grades in a criterion in a rubric
+			public int minOfGradesInCriterion(Rubric rubric, String criterion) {
+				int min=6;
+				for(Person grade:rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+						if(grade.getGrades().get(criterion)<min) {
+							min=f;
+						}
+					}
+				}
+				
+				return min;
+				
+			}
 		
 
 	public static void main(String[] args) {
