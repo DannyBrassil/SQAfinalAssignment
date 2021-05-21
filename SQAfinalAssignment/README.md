@@ -26,14 +26,14 @@ The purpose of this project is to demonstrate the best practices for a software 
 | Create method to create new student grade     | 2             | 6          |Completed|
 | Create method to add a Criterion to a Rubric  | 2             | 7          |Completed|
 | Create method to get a list of all Rubrics    | 2             | 8          |Completed|
-| Create method to add a score for a particular criterion to a grade| 2             | 9          |in progress|
+| Create method to add a score for a particular criterion to a grade| 2             | 9          |Completed|
 | Create method to get all StudentGrades associated with a specific rubric| 2             | 10          |Completed|
 | Create method to find average score of all student grades in a rubric| 3             | 11          |Completed|
 | Create method to find standard deviation of all student grades in a rubric| 3             | 12          |Completed|
 | Create method to find the minimum and maximum scores in a rubric| 3             | 13         |Completed|
 | Create method to find average score of all student grades in a specific criterion of a rubric.| 5             | 14         |Completed|
 | Create method to find standard deviation of all student grades in a specific criterion of a rubric.|5             | 15      |Completed|
-| Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 16         |         |
+| Create method to find the minimum and maximum scores in a specific criterion of a rubric.| 5             | 16         |Completed|
 
 
 
