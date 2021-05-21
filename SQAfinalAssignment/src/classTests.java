@@ -200,7 +200,7 @@ class classTests {
 
 					double stdev = c.stdevOfGradesInRubric(c.getSpecificRubric("Ruberic1"));
 					
-					assertEquals(24, stdev);
+					assertEquals(24.08318915758459, stdev);
 
 				}
 				

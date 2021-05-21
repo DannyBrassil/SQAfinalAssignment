@@ -76,8 +76,18 @@ A useful way to keep track of velocity is by using a chart or graph to illustrat
 ## Test Coverage metric 
 
 Test coverage is a metric used in software testing that measures the amount of testing performed by a set of tests. It works by gathering information about which parts of the application are executed when running tests. The tool i used for my tests is called 
-'EclEmma'. EclEmma is a java code coverage tool for eclipse. I chose this tool as it works good within the eclipse IDE and offers features within the IDE that allow for easy access o the analysis. It also provides plenty of analyis on the coverage and summarizes the coverage nicely and is highlighted throughout the code. 
+'EclEmma'. EclEmma is a java code coverage tool for eclipse. I chose this tool as it works good within the eclipse IDE and offers features within the IDE that allow for easy access o the analysis. It also provides plenty of analysis on the coverage and summarizes the coverage nicely and is highlighted throughout the code. 
 
+To run this tool in eclipse you must first install it through the Eclipse Marketplace. When you go into the marketplace search for "EclEmma"
+where it will then pop-up. Click on the install button and it will set itself up in your IDE. Once installed you run it by clicking on 'run' and then selecting 'Coverage as'. This will then run the tool on your application. This picture shows when the tool is running. It highlights the text being covered in tests in green and provides stats about the test coverage.
 
+![picture](CreatePersonBefore.png)
+![picture](CodeCoverage.png)
 
+Here we can see that i have a line that is highlighted in red and therefore not being covered in any tests. I can close this gap by introducing a new method that will reach this line of code.
+
+![picture](createpersonAfter.png)
+![picture](coverageAfter.png)
+
+After introducing the new method and running the tool again you can see that this line of code is now covered in my tests as it is green. Similarly, The stats show an increase in the percentage coverage the my Controller.java class 
 
