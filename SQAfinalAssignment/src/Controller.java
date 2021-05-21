@@ -123,8 +123,38 @@ public class Controller {
 				
 				return Math.sqrt(total/rubric.getGrades().size());
 				
+			}
+			
+			//find max score of all student grades in a rubric
+			public int maxOfGradesInRubric(Rubric rubric) {
+				int max=0;
+				for(Person grade:rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+						if(f>max) {
+							max=f;
+						}
+					}
+				}
+				
+				return max;
 				
 			}
+			
+			//find min score of all student grades in a rubric
+			public int minOfGradesInRubric(Rubric rubric) {
+				int min=6;
+				for(Person grade:rubric.getGrades()) {
+					for (int f : grade.getGrades().values()) {
+						if(f<min) {
+							min=f;
+						}
+					}
+				}
+				
+				return min;
+				
+			}
+			
 		
 
 	public static void main(String[] args) {

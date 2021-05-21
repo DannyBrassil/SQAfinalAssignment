@@ -203,7 +203,30 @@ class classTests {
 					assertEquals(24, stdev);
 
 				}
+				
+				//get minimum of student grades in a rubric
+				@Test
+				public void getMinOfGradesInRubric() {
+					Controller c = new Controller();
+					createRubric(c);
 
+					int min = c.minOfGradesInRubric(c.getSpecificRubric("Ruberic1"));
+					
+					assertEquals(3, min);
+
+				}
+
+				//get maximum of student grades in a rubric
+				@Test
+				public void getMaxOfGradesInRubric() {
+					Controller c = new Controller();
+					createRubric(c);
+
+					int max = c.maxOfGradesInRubric(c.getSpecificRubric("Ruberic1"));
+					
+					assertEquals(5, max);
+
+				}
 				private void createRubric(Controller c) {
 					// TODO Auto-generated method stub
 					
