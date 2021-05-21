@@ -105,8 +105,58 @@ Team version control is the practice of tracking and managing changes to softwar
 
 Gitflow is a branching model for Git. Git has become one of the most popular version control tools as it has many beneficial features. Git provides a long term history of changes.This is a very helpful for problems such as identifying the root causes of bugs or reverting back to older versions of the code. Git also provides branching and merging features these features allow team to work together on the same project without conflict. Team members can create a new branch to work on a new feature of the project without disrupting the current codebase. If they decide to add this new feature to the code Git allows them to merge it into the main branch that holds their code. Git also offers a high level of Traceability. Members of the team can trace all aspects of the changes made to the software. This helps with the managemnt of the project and also improves the knowledge of the team about the the project.  
 
-I used the GitFlow process in this project. from my main branch i created a develop branch. This branch acted as a main branch in which all other feature branches were branched from and merged into. I kept track of my sprint backlog from the develop branch. For the tasks inside the sprint i created a new branch. for the setting up of the project i created a branch called "POJOs". I then created a branch called  "controller" for all of the the functionality for the application. This was beneficial as i could keep track of all my progress in terms of the sprint backlog all in one place. It also provides a history of my progress which was useful for when i needed to check back on certain commits. There was also other parts to this project such as investigating test coverage metrics and test driven development for example. For these other parts, because i was doing them at different stages throughout the project it was good idea to make these into separate feature branches. I could therefore work on these branches independently from the other code in the project.
+I used the GitFlow process in this project. From my main branch I created a develop branch. This branch acted as a main branch in which all other feature branches were branched from and merged into. I kept track of my sprint backlog from the develop branch. For the tasks inside the sprint i created a new branch. for the setting up of the project i created a branch called "POJOs". I then created a branch called  "controller" for all of the the functionality for the application. This was beneficial as i could keep track of all my progress in terms of the sprint backlog all in one place. It also provides a history of my progress which was useful for when i needed to check back on certain commits. There was also other parts to this project such as investigating test coverage metrics and test driven development for example. For these other parts, because i was doing them at different stages throughout the project it was good idea to make these into separate feature branches. I could therefore work on these branches independently from the other code in the project.
 
 ![picture](gitflow.png)
 
-This diagram illustrates the gitflow process that i followed. I had a master branch,which i then created a develop branch from. From that develop branch i created feature branches that had the content and functionality of the project. After finishing work on these i could then merge thm back into the develop branch. Once the development was completed of the project i could then merge the develop back to the master branch as the project was finished.
+This diagram illustrates the gitflow process that i followed. I had a master branch,which i then created a develop branch from. From that develop branch i created feature branches that had the content and functionality of the project. After finishing work on these i could then merge them back into the develop branch. Once the development was completed of the project i could then merge the develop back to the master branch as the project was finished.
+
+## Code review
+A code review is technique used in agile teams. Developers on a team review other developers code. The aim of this technique is to help the team grow. This happens as developers share knowledge with each other when doing reviews. It also helps mentor new engineers and teach them good practices. I used code reviews in my project before merging new features back into my develop branch. Whilst the unit tests ensure my code was correct, I used code reviews to analyse my code which helps ensure it is of a good standard. When conducting a code review, it is beneficial to use a code review checklist. A checklist helps guide develops on what to look for in code but it also ensures a standard is met within the codebase of a project. I followed a checklist while reviewing commits in my project which can he seen [here](https://github.com/DannyBrassil/SQAfinalAssignment/pulls?q=is%3Apr+is%3Aclosed) in a list. When providing feedback on the code review I leave comments such as [this](https://github.com/DannyBrassil/SQAfinalAssignment/pull/14).
+
+#### Check List
+
+**1. Code Formatting**
+- Correct alignment of code
+- Good naming conventions
+- No unnessessary comments
+
+**2. Coding best practices**
+- No hardcoding 
+- avoid large if/else blocks
+- Use framework features when possible instead of writing custom code
+
+**3. Architecture**
+- Use design patterns where possible
+- code follows same style as existing code base
+- is code located in right files
+
+**4. Maintainability**
+- code should be self explanatory and easy to follow
+- Easy to test
+- should be easy to debug, use logs to help show flow of data in code
+- should not have to be configured once it already has been
+
+**5. Reusability**
+- do not repeat code
+- use reusable components such as functions
+
+**6. Test coverage**
+- Is the code tested enough.
+- Do the current tests cover enough code.
+- Is there any edge cases which haven't been catered for.
+
+**7. Security**
+- Is there any sensitive data in the code
+- Is external data handled correctly
+- Does it adhere to GDPR laws
+- Is the correct encryption used for sensitive data
+
+**8. Performance**
+- will the code causes delays to the overall system
+- will this affect other code it will work with
+- can the performance be improved
+
+**9. Scalability**
+- How well can the code scale?
+- code must be be to support a large user base that can grow
