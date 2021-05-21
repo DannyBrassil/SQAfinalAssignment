@@ -64,7 +64,7 @@ task 'Create method to make new rubric' was assigned a story point of 2 as I est
 Velocity is a metric used to measure the amount of work a Team can complete during a Sprint. By analyzing the amount of tasks completed in previous sprints, A development team can estimate how much work they can do in future sprint.
  
 In order to estimate the Velocity the team should review the previous three sprints. The team should count how many user story points have been completed in each sprint, while disregarding any that may not be completed or partially completed. So for example in my sprint, if the team completed all tasks, a total of 37 story points would have been completed. This process would be completed for three sprints then add the total number of stories and divide it by three to get the average number of story points completed. The team can now plan future sprints around this velocity metric they have calculated. The amount of work in future sprints should be decided based on this. So the number of story points in a future sprint should be add up to a number around the velocity calculated. this will dictate how many user stories will be in the sprint. It is important to remember that this is only an estimate and can change depending on variables such as team size and project complexity. 
-A useful way to keep track of velocity is by using a chart or graph to illustrate it. Kanban boards or velocity burndown graphs are a good option to illustrate the illustrate the planned velocity and compare it to the actual velocity. This gives teams a visual representation to help stay on track with the planned velocity of the sprint they are working on
+A useful way to keep track of velocity is by using a chart or graph to illustrate it. Kanban boards or velocity burndown graphs are a good option to illustrate the illustrate the planned velocity and compare it to the actual velocity. This gives teams a visual representation to help stay on track with the planned velocity of the sprint they are working on.
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/SampleBurndownChart.png"
@@ -72,6 +72,15 @@ A useful way to keep track of velocity is by using a chart or graph to illustrat
     
   This diagram illustrates an example of a burndown chart 
 </p>
+
+## Unit testing and Test-Driven development
+test driven development is an approach to software development in which test cases are developed in conjunction to the code in order to help specify and validate what the code should do. When taking a test driven development approach to software development, tests should be developed for every bit of functionality within the application. The tests should should be run and if the code fails then the developer should write new code with the goal of improving it to pass the test.
+
+![picture](081216_0811_TestDrivenD2.png)
+
+This diagram highlights the process of test driven development. Before writing code the developer should create and design a test for the code they plan to write. With this test in mind the developer should then start to code the feature while trying to get this test to pass. At first they should only be focused on getting the tests passing. Regular testing on the feature being coded will help the developer to improve the code and get the test passing.Once it has passed a developer can then change the code to conform with best coding practices and refactor it to be more efficient while still testing to make sure it is still passing and working as designed. However as illustrated in the diagram, if the test fails the developer must make changes to the code and execute the tests again . This process repeats itself till the tests are working.
+
+I took a test driven development approach to this project. as seen in this branch [here](https://github.com/DannyBrassil/SQAfinalAssignment/commits/ControllerClass), i make use of a large amount of tests. Each commit is a piece of functionality to the project which i used a test to get working. Once it worked i committed it to this branch and then updated my sprint backlog to mark the user story as 'Completed'. For example [this](https://github.com/DannyBrassil/SQAfinalAssignment/commit/fa363c6ba52848693ff1626d42a4761a5bf00150) commit shows the test class i created first. In order to get it working i had to create a method called averageGradesInCriterion(). In this case the test was very beneficial as it helped me see whether the calculation i was making was right or wrong which allowed me to work faster towards getting the right code. 
 
 ## Test Coverage metric 
 
