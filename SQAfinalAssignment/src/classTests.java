@@ -227,6 +227,19 @@ class classTests {
 					assertEquals(5, max);
 
 				}
+				
+				//get average of student grades in a criteria
+				@Test
+				public void getAverageGradesInCriteria() {
+
+					Controller c = new Controller();
+					createRubric(c);
+					double average = c.AverageGradesInCriterion(c.getSpecificRubric("Ruberic1"),"Design");
+					
+					assertEquals(4, average);
+
+				}
+				
 				private void createRubric(Controller c) {
 					// TODO Auto-generated method stub
 					
